@@ -1,40 +1,38 @@
 class Animal:
-    def __init__(self,id, nome, idade,raca,porte,peso,nr_chip):
-        self.id=id
+    def __init__(self,nr_chip,nome, idade,raca,porte,peso):
+        self.nr_chip=nr_chip
         self.nome=nome
         self.idade=idade
         self.raca=raca
         self.porte=porte
-        self.peso=peso
-        self.nr_chip=nr_chip
+        self.peso=peso 
+      
 
     def InfoAnimal(self):
-        print(f"Nome: {self.nome}")
+        return self.nome
 
 class Consulta(Animal):
-    def __init__(self,id,doencas,internamento):
-        super().__init__(id)
+    def __init__(self,nr_chip,nome, idade,raca,porte,peso,doencas,internamento):
+        Animal.__init__(self, nr_chip,nome, idade,raca,porte,peso)
         self.doencas=doencas
         self.internamento=internamento
     
+    def Doencas(self):
+        return self.doencas
+
 class Dono(Animal):
-    def __init__(self,id,nome1,contato,nif,morada):
-        super().__init__(id)
-        self.nome1=nome1
+    def __init__(self,nr_chip,nome, idade,raca,porte,peso,dono,contato,nif,morada):
+        Animal.__init__(self, nr_chip,nome, idade,raca,porte,peso)
+        self.dono=dono
         self.contato=contato
         self.nif=nif
         self.morada=morada
 
     def Imprime(self):
-        print(f"Nome do dono: {self.nome1}")
+       print(f"Numero chip: {self.nr_chip}\nNome: {self.nome}\nIdade: {self.idade}\nPeso: {self.peso}\nDono: {self.dono}\nContato: {self.contato}\nNif: {self.nif}\nMorada: {self.morada}")
 
 def main():
-    cao=Animal(1,"Bobi",5,"Rafeiro","Medio",15,123)
-    cao.InfoAnimal()
-
-    pessoa=Dono(1,"Ana",987456321,123654987,"Rua Teste")
+    pessoa = Dono(23, "Bolinhas",5,"Rafeiro","Medio",15, "James",919874563,223654987,"Rua Teste")
     pessoa.Imprime()
-  
-   
-if __name__=="__main__": 
-    main()
+
+main()
