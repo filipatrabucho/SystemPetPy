@@ -1,8 +1,7 @@
 # SystemPetPy
+
 System Pet in Python with class and child class
 With Pyscript
-<<<<<<< Updated upstream
-=======
 
 Tarefas:  
  -Html Css /visual
@@ -35,4 +34,4 @@ form log in
         -criar um logo e modificar cores do site
 
 python3 -m http.server
->>>>>>> Stashed changes
+
