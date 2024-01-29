@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Log In</h1>
+      <div id="error"></div>
+      <form action="">
+        <label for="username">Username:</label>
+        <input id="username" type="text" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+
+        <input type="button" id="Submet" value="Submet" onclick="Submete()" />
+      </form>
+    </div>
+    <script>
+      function Submete() {
+        if (document.getElementById("username").value == "admin") {
+          if (document.getElementById("password").value == "2559") {
+            window.location.href = "/index.html";
+          } /*  else {
+            const error = document.getElementById("error").value;
+            error.innerHTML == "Palavra Passe incorreta";
+          } */
+        }
+      }
+    </script>
+  </body>
+</html>
