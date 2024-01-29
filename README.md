@@ -32,3 +32,6 @@ form log in
 
     Em caso de termos tempo:
         -criar um logo e modificar cores do site
+
+python3 -m http.server
+

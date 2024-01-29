@@ -1,0 +1,22 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+#error {
+  color: red;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 10px;
+}
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+#Submet {
+  margin-top: 10px;
+  cursor: pointer;
+}

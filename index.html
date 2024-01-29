@@ -1,1 +1,35 @@
-<p>Está tudo ok</p>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica Vet</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+    </style>
+    <!--  <script type="module">
+      const loading = document.getElementById("loading");
+      addEventListener("py:ready", () => loading.close());
+      loading.showModal();
+    </script>
+    -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+    <div id="charts">This is a <b>Test</b>.</div>
+    <py-script>
+      from js import document c = document.getElementById('charts') c.innerHTML
+      = "" e = document.createTextNode("This is ") c.appendChild(e) e =
+      document.createElement("i") e.innerHTML = "another" c.appendChild(e) e =
+      document.createTextNode(" test.") c.appendChild(e)
+    </py-script>
+    <!--     <p>Ligado</p>
+    <div id="mytext"></div>
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+ -->
+  </body>
+</html>
+
